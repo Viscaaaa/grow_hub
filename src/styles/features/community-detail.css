@@ -1,0 +1,56 @@
+/* =========================================================
+   GrowHub - CommunityDetailView Styling
+   ========================================================= */
+
+.community-detail-page {
+  max-width: 1140px;
+}
+
+.community-header-card {
+  padding: 28px;
+}
+
+.community-large-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.community-header-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.community-split {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.member-row {
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.member-row:hover {
+  background: var(--bg-subtle);
+}
+
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 12px; }
+
+@media (max-width: 900px) {
+  .community-split {
+    grid-template-columns: 1fr;
+  }
+}

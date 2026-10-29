@@ -1,0 +1,61 @@
+/* =========================================================
+   GrowHub - NotificationsView Styling
+   ========================================================= */
+
+.notifications-page {
+  max-width: 860px;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.notification-card:hover {
+  background: var(--bg-subtle);
+  border-color: var(--green-200);
+}
+
+.unread-card {
+  border-left: 4px solid var(--primary);
+  background: #fbfdfc;
+}
+
+.notif-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.bg-red-soft { background: #fee2e2; color: #dc2626; }
+.bg-blue-soft { background: #dbeafe; color: #2563eb; }
+.bg-green-soft { background: #d1fae5; color: #1e8c45; }
+.bg-amber-soft { background: #fef3c7; color: #d97706; }
+.bg-orange-soft { background: #ffedd5; color: #ea580c; }
+
+.notif-content {
+  flex: 1;
+}
+
+.notif-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unread-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.mb-4 { margin-bottom: 16px; }
+.mt-1 { margin-top: 4px; }

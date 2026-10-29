@@ -1,0 +1,127 @@
+/* =========================================================
+   GrowHub - LeaderboardView Styling
+   ========================================================= */
+
+.leaderboard-page {
+  max-width: 980px;
+}
+
+.podium-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.podium-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-xs);
+}
+
+.rank-1-card {
+  border-color: #fde68a;
+  background: linear-gradient(180deg, #fffbeb 0%, #ffffff 100%);
+  padding-top: 28px;
+}
+
+.crown-icon {
+  position: absolute;
+  top: 10px;
+}
+
+.podium-medal {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.podium-medal.gold { background: #fef3c7; color: #b45309; }
+.podium-medal.silver { background: #e5e7eb; color: #374151; }
+.podium-medal.bronze { background: #fed7aa; color: #9a3412; }
+
+.podium-avatar {
+  width: 52px;
+  height: 52px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.first-avatar {
+  width: 64px;
+  height: 64px;
+  font-size: 20px;
+  box-shadow: 0 0 0 4px #fde68a;
+}
+
+.podium-score {
+  margin-top: 8px;
+}
+
+.rank-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 12px;
+  background: var(--bg-subtle);
+  color: var(--text-2);
+}
+
+.rank-badge-1 { background: #fef3c7; color: #b45309; }
+.rank-badge-2 { background: #e5e7eb; color: #374151; }
+.rank-badge-3 { background: #fed7aa; color: #9a3412; }
+
+.my-rank-row {
+  background: #edf8f1 !important;
+}
+
+.my-rank-sticky {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--radius-lg);
+}
+
+.my-rank-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.hover-green:hover {
+  color: var(--primary) !important;
+}
+
+.overflow-hidden {
+  overflow-x: auto;
+}
+
+.p-4 { padding: 16px; }
+.mb-4 { margin-bottom: 16px; }
+.mt-4 { margin-top: 16px; }
+
+@media (max-width: 640px) {
+  .podium-grid {
+    grid-template-columns: 1fr;
+  }
+}

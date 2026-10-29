@@ -1,0 +1,59 @@
+/* =========================================================
+   GrowHub - ShareModal Component Styling
+   ========================================================= */
+
+.share-preview {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.share-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.share-btn {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  border-color: var(--primary);
+  background: var(--green-50);
+  transform: translateY(-2px);
+}
+
+.share-btn-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+
+.bg-green { background: #25d366; }
+.bg-blue { background: #2563eb; }
+.bg-purple { background: #7c3aed; }
+.bg-dark { background: #142c14; }
+
+.text-primary {
+  color: #1e8c45;
+}

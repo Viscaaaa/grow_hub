@@ -1,0 +1,22 @@
+/* =========================================================
+   GrowHub - Admin Users Feature Styling
+   ========================================================= */
+
+.admin-users-page {
+  padding: 36px 40px 72px;
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .admin-users-page {
+    padding: 24px 20px 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-users-page {
+    padding: 18px 14px 36px;
+  }
+}

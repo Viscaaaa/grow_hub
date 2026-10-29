@@ -1,0 +1,281 @@
+/* =========================================================
+   GrowHub - Navbar Component Styling
+   ========================================================= */
+
+.topbar {
+  height: var(--topbar-h);
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--gradient);
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(30, 140, 69, 0.25);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 19px;
+  font-weight: 800;
+  color: #142c14;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.brand-sub {
+  color: #1e8c45;
+}
+
+.brand-tagline {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+  font-weight: 700;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Gamification indicators */
+.gamification-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gamify-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.gamify-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--green-200);
+}
+
+.pill-icon-glow {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.bg-amber-soft { background: #fef3c7; }
+.bg-orange-soft { background: #ffedd5; }
+.bg-green-soft { background: #d1fae5; }
+
+.text-amber { color: #d97706; }
+.text-orange { color: #ea580c; }
+.text-primary { color: #1e8c45; }
+
+.pill-info {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.pill-val {
+  font-weight: 800;
+  font-size: 13px;
+  color: #142c14;
+}
+
+.pill-lbl {
+  font-size: 11px;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.flicker {
+  animation: flicker 1.8s infinite;
+}
+
+/* Notif button */
+.notif-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: var(--text-2);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.notif-btn:hover {
+  background: var(--green-50);
+  color: var(--primary);
+  border-color: var(--green-200);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #dc3545;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+}
+
+/* User profile button & dropdown */
+.user-menu-wrapper {
+  position: relative;
+}
+
+.user-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 4px 8px 4px 4px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-profile-btn:hover {
+  background: var(--bg-subtle);
+  border-color: var(--border);
+}
+
+.user-profile-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 130px;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--dark);
+}
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: 230px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 8px;
+  z-index: 100;
+}
+
+.dropdown-header {
+  padding: 8px 12px;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: var(--green-50);
+  color: var(--primary);
+}
+
+.text-red {
+  color: #dc3545 !important;
+}
+
+.text-red:hover {
+  background: #fdecee !important;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .gamification-pills .pill-level {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: flex;
+  }
+  .hide-tablet {
+    display: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .gamification-pills .pill-streak {
+    display: none;
+  }
+}

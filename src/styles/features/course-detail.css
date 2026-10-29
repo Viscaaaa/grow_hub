@@ -1,0 +1,103 @@
+/* =========================================================
+   GrowHub - CourseDetailView Styling
+   ========================================================= */
+
+.course-header-card {
+  padding: 32px;
+  color: #ffffff;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-header-title {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.course-header-summary {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.badge-light-blur {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.course-header-meta {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.points-reward-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: var(--dark);
+  font-weight: 800;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+
+.course-body-card {
+  padding: 32px;
+}
+
+:deep(.md-h2) {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+:deep(.md-h3) {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+:deep(.md-li) {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+.completion-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.completion-done {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.completion-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.mt-6 { margin-top: 24px; }
+.mb-2 { margin-bottom: 8px; }

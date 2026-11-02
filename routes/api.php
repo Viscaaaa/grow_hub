@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AdminLevelRuleController;
 use App\Http\Controllers\Api\AdminPointRuleController;
 use App\Http\Controllers\Api\AdminUserController;
 use App\Http\Controllers\Api\AuthController;
@@ -103,6 +104,15 @@ Route::middleware(['auth:sanctum', 'track.activity'])->group(function () {
             Route::post('/point-rules/reset-defaults', [AdminPointRuleController::class, 'resetDefaults']);
             Route::put('/point-rules/{pointRule}', [AdminPointRuleController::class, 'update']);
             Route::post('/point-rules/{pointRule}/toggle', [AdminPointRuleController::class, 'toggle']);
+
+            // Gamification Level Settings & Rules
+            Route::get('/level-rules', [AdminLevelRuleController::class, 'index']);
+            Route::post('/level-rules', [AdminLevelRuleController::class, 'store']);
+            Route::put('/level-rules/batch', [AdminLevelRuleController::class, 'batchUpdate']);
+            Route::post('/level-rules/reset-defaults', [AdminLevelRuleController::class, 'resetDefaults']);
+            Route::put('/level-rules/{levelRule}', [AdminLevelRuleController::class, 'update']);
+            Route::post('/level-rules/{levelRule}/toggle', [AdminLevelRuleController::class, 'toggle']);
+            Route::delete('/level-rules/{levelRule}', [AdminLevelRuleController::class, 'destroy']);
         });
     });
 });

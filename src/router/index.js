@@ -22,6 +22,7 @@ import ProfileView from '@/views/ProfileView.vue'
 import ReviewPortalView from '@/views/ReviewPortalView.vue'
 import AdminUsersView from '@/views/AdminUsersView.vue'
 import AdminPointRulesView from '@/views/point-rules/AdminPointRulesView.vue'
+import AdminLevelRulesView from '@/views/level-rules/AdminLevelRulesView.vue'
 
 const routes = [
   {
@@ -160,6 +161,12 @@ const routes = [
         name: 'admin-point-rules',
         component: AdminPointRulesView,
         meta: { title: 'Point System Settings – GrowHub', requiresAdmin: true },
+      },
+      {
+        path: 'admin/level-rules',
+        name: 'admin-level-rules',
+        component: AdminLevelRulesView,
+        meta: { title: 'Level System Settings – GrowHub', requiresAdmin: true },
       },
     ],
   },

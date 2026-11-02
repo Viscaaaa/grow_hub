@@ -71,6 +71,11 @@
             <Sparkles :size="19" />
             <span>Point Settings</span>
           </router-link>
+
+          <router-link v-if="authStore.isAdmin" to="/admin/level-rules" class="nav-item" @click="$emit('close')">
+            <TrendingUp :size="19" />
+            <span>Level Settings</span>
+          </router-link>
         </nav>
       </div>
 
@@ -143,7 +148,7 @@
 import {
   House, BookOpen, LayoutDashboard, GraduationCap, Users,
   SquarePen, Bookmark, Trophy, ShieldCheck, Bell, CircleAlert, User, Award,
-  ChevronLeft, ChevronRight, Sparkles
+  ChevronLeft, ChevronRight, Sparkles, TrendingUp
 } from 'lucide-vue-next'
 import { useAuthStore } from '@/stores/auth'
 
